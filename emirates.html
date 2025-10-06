@@ -1,0 +1,58 @@
+<html>
+<head>
+<title> Emirates</title>
+<script>
+function UAE()
+{
+	var n, answer;
+	n = document.frmUAE.cboState.selectedIndex;
+	switch (n)
+	{
+		case 0:
+		answer = "Grand Mosque"
+		break;
+		case 1:
+		answer = "Burj Khalifa"
+		break;
+		case 2:
+		answer = "Jebel Jais"
+		break;
+		case 3:
+		answer = "Sharjah Aquarium"
+		break;
+		case 4:
+		answer = "Ajman Museum"
+		break;
+		case 5:
+		answer = "UAQ Fort"
+		break;
+		case 6:
+		answer = "Fujairah Village"
+		break;
+	}
+	document.frmUAE.txtUAE.value = answer;
+}
+</script>
+</head>
+<body>
+	<form name= "frmUAE">
+		<center> Emirates
+	<select size= 1 name="cboState">
+		<option>Abu Dhabi</option>
+		<option>Dubai</option>
+		<option>Ras Al Khaimah</option>
+		<option>Sharjah</option>
+		<option>Ajman</option>
+		<option>Umm Al Quwain</option>
+		<option>Fujairah</option>
+	</select>
+	<br><br>
+	Famous places
+	<input type= "text" name= "txtUAE">
+	<br><br>
+	<input type= "button" value="show" onClick="UAE()">
+	</center>
+
+	</form>
+	</body>
+</html>
